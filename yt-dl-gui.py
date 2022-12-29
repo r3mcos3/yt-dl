@@ -27,7 +27,7 @@ canvas = Canvas(screen, width=500, height=500)
 canvas.pack()
 
 # Logo Image
-logo_img = PhotoImage(file='yt.png')
+logo_img = PhotoImage(file='.pics/yt.png')
 # Resize Logo
 logo_img = logo_img.subsample(4, 4)
 canvas.create_image(250, 80, image=logo_img)
