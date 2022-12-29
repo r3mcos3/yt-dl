@@ -21,6 +21,9 @@ def download_file():
     shutil.move(mp4_video, user_location)
     screen.title('Download Complete')
 
+def close():
+    screen.destroy()
+
 screen = Tk()
 title = screen.title('Youtube Downloader')
 canvas = Canvas(screen, width=500, height=500)
@@ -43,12 +46,16 @@ location_button = Button(screen, text='Pick Location', command=select_location)
 # Download Button
 download_button = Button(screen, text='Download Video', command=download_file)
 
+# Exit Button
+exit_button = Button(screen, text='Exit', command=close)
+
 # Add Widgets To Window
 canvas.create_window(250, 170, window=location_label)
 canvas.create_window(250, 220, window=location_button)
 canvas.create_window(250, 280, window=link_label)
 canvas.create_window(250, 330, window=link_field)
 canvas.create_window(250, 400, window=download_button)
+canvas.create_window(250, 450, window=exit_button)
 
 
 screen.mainloop()
