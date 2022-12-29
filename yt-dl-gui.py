@@ -44,10 +44,10 @@ location_button = Button(screen, text='Pick Location', command=select_location)
 download_button = Button(screen, text='Download Video', command=download_file)
 
 # Add Widgets To Window
-canvas.create_window(250, 170, window=link_label)
-canvas.create_window(250, 220, window=link_field)
-canvas.create_window(250, 280, window=location_label)
-canvas.create_window(250, 330, window=location_button)
+canvas.create_window(250, 170, window=location_label)
+canvas.create_window(250, 220, window=location_button)
+canvas.create_window(250, 280, window=link_label)
+canvas.create_window(250, 330, window=link_field)
 canvas.create_window(250, 400, window=download_button)
 
 
